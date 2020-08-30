@@ -1,0 +1,45 @@
+/* Not Found Container */
+.not-found {
+  display: grid;
+  grid-gap: 3em 0;
+  justify-content: space-between;
+  grid-template-columns: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Not Found item-container */
+.not-found__item {
+  text-align: center;
+}
+
+.not-found__item--message {
+  width: 100%;
+  padding: 4em 0;
+  margin: 4em 0;
+}
+
+.not-found__item--tittle {
+  font-size: 10em;
+  font-family: "Nixie One", cursive;
+  color: #20B2AA;
+}
+
+/* Pulse Animation */
+.animate {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  margin-right: 0;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
