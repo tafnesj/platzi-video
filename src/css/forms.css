@@ -1,0 +1,126 @@
+/*---- General ----*/
+h2 {
+  text-align: center;
+}
+
+.input {
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0px 0.5em;
+  outline: none;
+  height: 50px;
+  width: 85%;
+}
+::placeholder {
+  color: white;
+}
+
+/* Social Media */
+.fa-google {
+  border-radius: 25px;
+  background-color: #dd4b39;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+.fa-twitter {
+  border-radius: 25px;
+  background-color: #55acee;
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+/*---- Login & Register ----*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1em;
+  min-height: calc(100vh - 10em);
+  color: white;
+  margin-bottom: 2em;
+}
+
+.container__list {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__list label {
+  font-size: 14px;
+}
+
+.form__item--remember-me {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form__item--remember-me a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.form__item--remember-me a:hover {
+  text-decoration: underline;
+}
+
+.container__social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form__item--option {
+  font-size: 14px;
+}
+
+.form__item--option a {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.form__item--option a:hover {
+  text-decoration: underline;
+}
+
+.form__item--social-media:hover {
+  text-decoration-line: underline;
+}
+
+.form__item--button {
+  background-color: rgba(32, 178, 170, 0.9);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  outline: none;
+}
+
+.form__item--button:hover {
+  background-color: #20b2aa;
+}

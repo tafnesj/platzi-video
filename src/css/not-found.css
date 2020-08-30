@@ -22,7 +22,7 @@
 .not-found__item--tittle {
   font-size: 10em;
   font-family: "Nixie One", cursive;
-  color: #20B2AA;
+  color: #20b2aa;
 }
 
 /* Pulse Animation */
@@ -39,7 +39,13 @@
 }
 
 @keyframes pulse {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.2);}
-  100% {transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
