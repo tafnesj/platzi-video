@@ -8,18 +8,49 @@
   <!-- Icon Url Bar -->
   <link rel="icon" type="image/png" href="./src/img/icon.png">
   <!-- CSS Stylesheet  -->
-  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/index.css">
   <!-- Font Awesome | Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nixie+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- Main Navbar -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <img class="navbar__logo" src="./src/img/logo.png" alt="Logo de Platzi-Video">
+    <!-- Side Menu -->
+    <div class="sidenav">
+      <!-- Toogle switch -->
+      <div class="sidenav__list">
+        <div class="sidenav__menu">
+          <div class="lines line1"></div>
+          <div class="lines line2"></div>
+          <div class="lines line3"></div>
+        </div>
+        <!-- ./Toogle switch -->
+        <ul class="menu__list">
+          <img src="./src/img/logo.png" alt="Logo de Platzi-Video">
+          <div class="separate__item">
+            <i class="fas fa-grip-lines-vertical"></i>
+          </div>
+          <!-- Menu Items -->
+          <li class="menu__item">
+            <a href="" class="menu__item--link">
+              <i class="fas fa-user-lock"></i> Cuenta
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__item--link">
+              <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+            </a>
+          </li>
+          <!-- ./Menu Items -->
+        </ul>
+      </div>
+    </div>
+    <!-- ./Side Menu -->
   </header>
   <!-- ./Main Navbar -->
 
@@ -32,7 +63,8 @@
 
   <!-- Section 01 -->
   <h2 class="categories__title">
-    <span>| </span>Sección 1
+    <span>| </span>
+    <span class="categories__title--section">Sección 1</span>
   </h2>
   <!-- Carrousel -->
   <section class="carousel">
@@ -129,7 +161,8 @@
 
   <!-- Section 02 -->
   <h2 class="categories__title">
-    <span>| </span>Sección 2
+    <span>| </span>
+    <span class="categories__title--section">Sección 2</span>
   </h2>
   <!-- Carrousel -->
   <section class="carousel">
@@ -226,12 +259,25 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <a href="/">Términos de uso</a>
-    <a href="/">Declaración de privacidad</a>
-    <a href="/">Centro de ayuda</a>
-    <a href="https://github.com/tafnesj"><i class="fab fa-github" style="font-size: 2em;"></i></a>
+    <div class="footer__item">
+      <img src="./src/img/logoP.png" alt="Logo personal">
+    </div>
+    <div class="footer__item">
+      <a href="#">Términos de uso</a>
+      <a href="#">Declaración de privacidad</a>
+      <a href="#">Centro de ayuda</a>
+      <a href="https://github.com/tafnesj"><i class="fab fa-github"></i></a>
+    </div>
   </footer>
   <!-- ./Footer -->
 </body>
+
+<script>
+  var toggleButton = document.querySelector('.sidenav__menu');
+  var navBar = document.querySelector('.sidenav__list');
+  toggleButton.addEventListener('click', function () {
+	navBar.classList.toggle('toggle');
+});
+</script>
 
 </html>
