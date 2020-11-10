@@ -384,7 +384,7 @@ header {
 }
 ::-webkit-scrollbar:hover {
   background: #b3b3b3;
-  box-shadow: 002px1pxrgba (0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 ::-webkit-scrollbar:hover:active {
   background: #999;
